@@ -3,7 +3,7 @@ const stockDataTable = document.getElementById('stockData');
 
 loadDataButton.addEventListener('click', async () => {
     try {
-        const response = await fetch('https://my-sklad-test1.vercel.app/');
+        const response = await fetch('https://myskladbacktest1-production.up.railway.app');
         const data = await response.json();
         stockDataTable.innerHTML = '';
         data.forEach(item => {
