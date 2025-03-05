@@ -3,7 +3,7 @@ const stockDataTable = document.getElementById('stockData');
 
 loadDataButton.addEventListener('click', async () => {
     try {
-        const response = await fetch('http://localhost:3000/stocks');
+        const response = await fetch('https://my-sklad-test1.vercel.app/');
         const data = await response.json();
         stockDataTable.innerHTML = '';
         data.forEach(item => {
